@@ -19,8 +19,7 @@ module Yandex
 
       # http://translate.yandex.ru/
       def text(text, lang)
-        url = "http://translate.yandex.ru/tr.json/translate?text=#{CGI::escape(text)}"
-        url << "&lang=#{lang}" if lang
+        url = "http://translate.yandex.ru/tr.json/translate?text=#{CGI::escape(text)}&lang=#{lang}"
         open(url).read[1..-2]
       end
     end
