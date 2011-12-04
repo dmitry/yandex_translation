@@ -1,7 +1,7 @@
 %w(rubygems open-uri nokogiri cgi).each {|lib| require lib}
 
 module Yandex
-  class Translate
+  class Translation
     class << self
       # language directions: en-ru-en de-ru-de fr-ru-fr it-ru-it es-ru-es uk-ru ru-uk kk-ru ru-kk la-ru-la
       def word(word, lang=nil)
